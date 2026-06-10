@@ -1,0 +1,25 @@
+{
+  "store_version": "1.0",
+  "apps": [
+    {
+      "id": "jellyfin",
+      "name": "Jellyfin",
+      "category": "media"
+    },
+    {
+      "id": "nginx-proxy-manager",
+      "name": "Nginx Proxy Manager",
+      "category": "network"
+    },
+    {
+      "id": "adguard-home",
+      "name": "AdGuard Home",
+      "category": "network"
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "category": "network"
+    }
+  ]
+}

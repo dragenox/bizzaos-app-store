@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ${APP_ID}
+spec:
+  containers:
+    - name: ${APP_ID}
+      image: ${IMAGE}
+
+      ports:
+        - containerPort: ${CONTAINER_PORT}
+          hostPort: ${HOST_PORT}
+
+      env:
+        - name: TZ
+          value: "${TZ}"
+
+      volumeMounts:
+        - mountPath: /config
+          name: config
+
+  volumes:
+    - name: config
+      hostPath:
+        path: ${DATA_DIR}/config

@@ -1,0 +1,20 @@
+{
+  "id": "jellyfin",
+  "name": "Jellyfin",
+  "description": "Media server",
+  "version": "1.0.0",
+
+  "runtime": "kube",
+  "default_variant": "default",
+
+  "variants": ["default", "gpu"],
+
+  "ports": [8097, 8921],
+
+  "volumes": [
+    "/config",
+    "/Media"
+  ],
+
+  "category": "media"
+}
